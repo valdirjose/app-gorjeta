@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+<div class="container">
+    <div>
+        <h1 class="title">MINHA GORJETA</h1>
+    </div>
+    <div>
+        <form class="tipos" id="tipos">
+            <label for="conta">
+                <p>TOTAL DA CONTA:</p>
+            </label>
+            <p>
+                <input type="number" placeholder="R$" name="conta" id="conta" class="formaInput">
+            </p>
+            <label for="qualidadeAtendi">
+                <p>COMO FOI O ATENDIMENTO?</p>
+            </label>
+            <p>
+                <select name="qualidadeAtendi" id="qualidadeAtendi" class="formaSelect">
+                    <option disable selected value="0">ESCOLHA UMA OPÇÃO</option>
+                    <option value="0.3">  30% - Incrível</option>
+                    <option value="0.2">  20% - Bom</option>
+                    <option value="0.15"> 15% - Aceitável</option>
+                    <option value="0.1">  10% - Ruim</option>
+                    <option value="0.05"> 05% - Péssimo</option>
+                </select>
+            </p>
+            <label for="pessoas">
+                <p>QUANTAS PESSOAS VÃO DIVIDIR A CONTA?</p>
+            </label>
+            <p>
+                <input type="number" placeholder="0" name="pessoas" id="pessoas" class="formaPessoas"> 
+            </p>
+            <button type="submit" class="formaEnvia">CALCULAR</button>
+        </form>
+    </div>
+
+    <div id="totalGorjeta">
+        GORJETA:
+        R$<span id="gorjeta">0000</span>
+        <span id="porPessoa">CADA</span>
+
+    </div>
+</div>
+    
+
+
+
+
+
+
+
+ <script src="script.js"></script>   
+</body>
+</html>
